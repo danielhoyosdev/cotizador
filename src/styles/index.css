@@ -6,6 +6,8 @@ html {
 }
 
 body {
+    position: relative;
+    box-sizing: border-box;
     background: #256eb0; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2d5d7c, #010326); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2d5d7c, #010326);
@@ -15,11 +17,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
 .contenedor {
     position: relative;
-    width: 500px;
+    max-width: 500px;
     height: auto;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
     border-radius: .5em;
@@ -28,7 +31,6 @@ body {
 
 header {
     position: relative;
-    max-width: 600px;
     background-color: #a61804;
     padding: .5em;
     font-weight: bold;
@@ -52,10 +54,11 @@ header h1 {
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
+    overflow: hidden;
 }
 
 .campo label {
-    flex: 0 0 200px;
+    flex: 0 0 150px;
 }
 
 .campo input[type="radio"] {
