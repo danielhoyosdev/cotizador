@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cotizador/static/css/main.4016eb16.chunk.css",
+    "main.css": "/cotizador/static/css/main.4e226ccd.chunk.css",
     "main.js": "/cotizador/static/js/main.e6bf7daf.chunk.js",
     "main.js.map": "/cotizador/static/js/main.e6bf7daf.chunk.js.map",
     "runtime~main.js": "/cotizador/static/js/runtime~main.ac779f68.js",
@@ -8,8 +8,8 @@
     "static/js/2.abbd2b59.chunk.js": "/cotizador/static/js/2.abbd2b59.chunk.js",
     "static/js/2.abbd2b59.chunk.js.map": "/cotizador/static/js/2.abbd2b59.chunk.js.map",
     "index.html": "/cotizador/index.html",
-    "precache-manifest.7ad512a69b3cd3a17542f3dece8311cd.js": "/cotizador/precache-manifest.7ad512a69b3cd3a17542f3dece8311cd.js",
+    "precache-manifest.11e6edc86092823457cbe0d1e29e13ab.js": "/cotizador/precache-manifest.11e6edc86092823457cbe0d1e29e13ab.js",
     "service-worker.js": "/cotizador/service-worker.js",
-    "static/css/main.4016eb16.chunk.css.map": "/cotizador/static/css/main.4016eb16.chunk.css.map"
+    "static/css/main.4e226ccd.chunk.css.map": "/cotizador/static/css/main.4e226ccd.chunk.css.map"
   }
 }
