@@ -1,13 +1,160 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://necolas.github.io/normalize.css/8.0.0/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+html {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+    background: #256eb0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2d5d7c, #010326); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2d5d7c, #010326);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    position: relative;
+    width: 500px;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    max-width: 600px;
+    background-color: #a61804;
+    padding: .5em;
+    font-weight: bold;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: .5em;
+    font-family: 'Josefin Sans', serif;
+    text-align: center;
+}
+
+.contenedor-formulario {
+    background-color: white;
+    padding: 2rem;
+    transition: 1s ease all;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.campo label {
+    flex: 0 0 200px;
+}
+
+.campo input[type="radio"] {
+    margin-right: .25rem;
+}
+
+.campo input[type="radio"]:last-child {
+    margin-left: 1.5rem;
+}
+
+.campo select {
+    flex-grow: 1;
+    padding: .25em;
+}
+
+.boton {
+    position: relative;
+    display: block;
+    border: none;
+    border-radius: 2em;
+    background: #2d5d7c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2d5d7c, #010326); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2d5d7c, #010326);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.resumen {
+    padding: 1rem;
+    text-align: center;
+    background-color: #a61804;
+    color: white;
+    margin-top: 1rem;
+    border-radius: .5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .6)
+}
+
+.resumen h2 {
+    margin: 0 0 1rem 0;
+}
+
+.resumen li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.resumen span{
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+.gran-total {
+    text-align: center;
+}
+
+.gran-total h2, 
+.gran-total span{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #2d5d7c, #010326);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.resultado {
+    margin-bottom: 40px;
+}
+
+.resultado-enter {
+    transition: .5s;
+    transform: translateY(120%);
+}
+
+.resultado-enter.resultado-enter-active {
+    transform: translateY(120%);
+}
+
+.resultado-exit {
+    transform: translateY(0);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.resultado-exit.resultado-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
 }
